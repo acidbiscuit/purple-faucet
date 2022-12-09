@@ -2,8 +2,6 @@
 
 > [Purple Faucet](https://purplefaucet.app) is a faucet on Polygon network.
 
-Project URL: [https://purplefaucet.app](https://purplefaucet.app)
-
 This repository includes the smart contract code powering Purple Faucet app.
 
 ## Project setup
@@ -38,7 +36,7 @@ yarn lint:sol
 # Deploy to Mumbai testnet
 yarn deploy -- --network mumbai
 # Deploy to Polygon mainnet
-yarn deploy -- --network mainnet
+yarn deploy -- --network polygon
 ```
 
 
