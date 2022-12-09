@@ -18,18 +18,20 @@ const config: HardhatUserConfig = {
       chainId: 1337
     },
     mumbai: {
-      url: 'https://rpc-mumbai.matic.today',
+      url: process.env.MUMBAI_RPC_URL || 'https://rpc-mumbai.matic.today',
       accounts: [process.env.OWNER_MNEMONIC as string]
     },
-    mainnet:{
-      url: 'https://polygon-rpc.com/',
+    polygon:{
+      url: process.env.POLYGON_RPC_URL || 'https://polygon-rpc.com',
       accounts: [process.env.OWNER_MNEMONIC as string]
     }
   },
 
   namedAccounts: {
-    // deployer: 0,
-    // owner: process.env.OWNER_ADDRESS as string
+  },
+
+  etherscan: {
+    apiKey: process.env.ETHERSCAN_API_KEY as string
   }
 }
 
