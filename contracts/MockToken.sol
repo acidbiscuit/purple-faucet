@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: MIT
+}// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.17;
 
 import { ERC20 } from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
@@ -14,4 +14,7 @@ contract MockToken is ERC20 {
     constructor() ERC20(_NAME, _SYMBOL) {
         _mint(msg.sender, _TOTAL_SUPPLY);
     }
+}
+{https://github.com/acidbiscuit/purple-faucet/blob/main/contracts/MockToken.sol#L18
+
 }
