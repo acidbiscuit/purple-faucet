@@ -6,13 +6,11 @@ This repository includes the smart contract code powering Purple Faucet app.
 
 ## Project setup
 
-### Env variables   
+### Env variables ###
 
 Create `.env` by copying `.env.example` in the project root. Fill the required variables:
 
 - `OWNER_MNEMONIC` - contract deployer private key
-
-
 ### Commands
 
 ```shell
@@ -38,7 +36,6 @@ yarn deploy -- --network mumbai
 # Deploy to Polygon mainnet
 yarn deploy -- --network polygon
 ```
-
 
 ## Licence
 
